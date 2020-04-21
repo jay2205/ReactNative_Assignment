@@ -42,6 +42,7 @@ const HomeScreen = ({navigation}) => {
 
   const fetchData = () => {
     console.log('fetchData');
+    console.log(pageNumber);
     setPageNaumber(pageNumber + 1);
     const currentURL = URL + pageNumber;
     fetch(currentURL)
